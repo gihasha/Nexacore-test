@@ -1,0 +1,57 @@
+:root {
+    --nexa-bg: #080B14;
+    --nexa-surface: #0E1320;
+    --nexa-card: #141B2B;
+    --nexa-card-hover: #1A2335;
+    --nexa-blue: #0A66FF;
+    --nexa-blue-deep: #0047B3;
+    --nexa-cyan: #00D2FF;
+    --nexa-purple: #6C5CE7;
+    --nexa-success: #00E5B0;
+    --nexa-warning: #FFB84D;
+    --nexa-danger: #FF5E7C;
+    --nexa-text: #F2F8FF;
+    --nexa-text-dim: #A5BED9;
+    --nexa-border: #1F2A3F;
+    --font-primary: 'Plus Jakarta Sans', sans-serif;
+}
+
+body.light-mode {
+    --nexa-bg: #F5F9FF;
+    --nexa-surface: #FFFFFF;
+    --nexa-card: #FFFFFF;
+    --nexa-card-hover: #F5F9FF;
+    --nexa-text: #0A1A2F;
+    --nexa-text-dim: #2E4A6A;
+    --nexa-border: #D0E0F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--nexa-bg);
+    color: var(--nexa-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* ===== PAGE ROUTING ===== */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-nexa {
+    background: rgba(8, 11, 20, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(10,102,255
